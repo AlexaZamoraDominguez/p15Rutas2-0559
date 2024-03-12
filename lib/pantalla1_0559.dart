@@ -1,6 +1,8 @@
 //Pantalla1_0559
 //
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class Pantalla1_0559 extends StatelessWidget {
@@ -11,18 +13,20 @@ class Pantalla1_0559 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pantalla1 Zamora0559'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.red,
       ),
-      body: Center(
-          child: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {}, //fin de onPressed
-            child: const Text("Patntalla1"),
-          )
-        ], //fin de niños
-      )),
+      body: const Center(
+        child: Card(
+          color: Colors.deepPurple,
+          child: Padding(
+            padding: EdgeInsets.all(16),
+            child: Text(
+              "Tarjeta1 Zamora",
+              style: TextStyle(fontSize: 30, color: Colors.white),
+            ),
+          ),
+        ),
+      ),
     );
-    ;
   } //fin widget
 } //fin pantalla1

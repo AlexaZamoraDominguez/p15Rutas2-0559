@@ -10,11 +10,26 @@ class Pantalla2_0559 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pantalla 2 Zamora0559'),
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: Color(0xff5e0687),
       ),
       body: Center(
-        child: Text(
-          'Pantalla2',
+        child: Container(
+          color: Color(0xff9a4a09),
+          width: double.infinity,
+          height: 300,
+          child: Card(
+            color: Color(0xffe19734),
+            margin: EdgeInsets.all(32),
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Center(
+                child: Text(
+                  'Tarjeta2 Zamora',
+                  style: TextStyle(fontSize: 30, color: Colors.black),
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );

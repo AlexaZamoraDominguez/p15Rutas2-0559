@@ -11,7 +11,7 @@ class PantallaIni_0559 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pagina Inicial Zamora0559"),
+        title: const Text("Pagina Inicial Zamora0559"),
         backgroundColor: Colors.brown,
       ),
       body: Center(
@@ -22,13 +22,13 @@ class PantallaIni_0559 extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla1_0559");
               }, //fin onpressed
-              child: Text("Mover a Pantalla1"),
+              child: const Text("Ejemplo Card"),
             ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, "/Pantalla2_0559");
               }, //fin onpressed
-              child: Text("Mover a Pantalla2"),
+              child: const Text("Mover a Pantalla2"),
             )
           ], //fin de ninos
         ),
