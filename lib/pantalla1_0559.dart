@@ -13,17 +13,19 @@ class Pantalla1_0559 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pantalla1 Zamora0559'),
-        backgroundColor: Colors.red,
+        backgroundColor: Color(0xffa15a0b),
       ),
-      body: const Center(
-        child: Card(
-          color: Colors.deepPurple,
-          child: Padding(
-            padding: EdgeInsets.all(16),
-            child: Text(
-              "Tarjeta1 Zamora",
-              style: TextStyle(fontSize: 30, color: Colors.white),
-            ),
+      body: Center(
+        child: Container(
+          color: Color(0xff2f4bca),
+          width: 300,
+          height: 300,
+          padding: EdgeInsets.all(32),
+          margin: EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+          alignment: Alignment.center,
+          child: Text(
+            'Tarjeta1 Zamora',
+            style: TextStyle(fontSize: 30, color: Colors.white),
           ),
         ),
       ),

@@ -10,29 +10,23 @@ class Pantalla2_0559 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Pantalla 2 Zamora0559'),
-        backgroundColor: Color(0xff5e0687),
+        backgroundColor: Color(0xff4618b4),
       ),
       body: Center(
         child: Container(
-          color: Color(0xff9a4a09),
-          width: double.infinity,
-          height: 300,
-          child: Card(
-            color: Color(0xffe19734),
-            margin: EdgeInsets.all(32),
-            child: Padding(
-              padding: EdgeInsets.all(16),
-              child: Center(
-                child: Text(
-                  'Tarjeta2 Zamora',
-                  style: TextStyle(fontSize: 30, color: Colors.black),
-                ),
-              ),
-            ),
+          color: Color(0xffdb5757),
+          constraints: BoxConstraints(
+            minHeight: 100,
+            minWidth: 300,
+            maxHeight: 400,
+            maxWidth: 300,
+          ),
+          child: Text(
+            '     Tarjeta2 Zamora',
+            style: TextStyle(fontSize: 30, color: Colors.white),
           ),
         ),
       ),
     );
-    ;
   } //fin widget
 } //fin pantalla2
